@@ -20,7 +20,7 @@ module instr_register_test
   );
 
   //timeunit 1ns/1ns;
-  //JUST  THE COMMIT
+  //JUST  THE COMMITT
  
 
   int seed = 555;
