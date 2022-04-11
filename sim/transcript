@@ -27,19 +27,19 @@
 # Refreshing C:\Users\kn1gh\Desktop\tsc\lab2\sim\work.tb_ifc
 # Refreshing C:\Users\kn1gh\Desktop\tsc\lab2\sim\work.instr_register_test
 # Refreshing C:\Users\kn1gh\Desktop\tsc\lab2\sim\work.instr_register
-# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(82): Clocking block output lab2if.cb.opcode is not legal in this
+# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(103): Clocking block output lab2if.cb.opcode is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(80): Clocking block output lab2if.cb.operand_a is not legal in this
+# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(104): Clocking block output lab2if.cb.operand_a is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(81): Clocking block output lab2if.cb.operand_b is not legal in this
+# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(105): Clocking block output lab2if.cb.operand_b is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(38): Clocking block output lab2if.cb.read_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(102): Clocking block output lab2if.cb.write_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
-# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(37): Clocking block output lab2if.cb.write_pointer is not legal in this
+# ** Warning: (vsim-8441) ../lab2/lab01_testbench-interface/instr_register_test.sv(109): Clocking block output lab2if.cb.read_pointer is not legal in this
 # or another expression.
 #         Region: /top/test
 # 
@@ -112,50 +112,70 @@
 #   operand_a = -9
 #   operand_b = 1
 # 
+#   result    = -9
+# 
 # Read from register location 9: 
 #   opcode = 7 (MOD)
 #   operand_a = -2
 #   operand_b = 5
+# 
+#   result    = -2
 # 
 # Read from register location 6: 
 #   opcode = 4 (SUB)
 #   operand_a = 3
 #   operand_b = 13
 # 
+#   result    = -10
+# 
 # Read from register location 0: 
 #   opcode = 1 (PASSA)
 #   operand_a = -12
 #   operand_b = 4
+# 
+#   result    = -12
 # 
 # Read from register location 8: 
 #   opcode = 2 (PASSB)
 #   operand_a = 3
 #   operand_b = 5
 # 
+#   result    = 5
+# 
 # Read from register location 3: 
 #   opcode = 2 (PASSB)
 #   operand_a = -8
 #   operand_b = 5
+# 
+#   result    = 5
 # 
 # Read from register location 4: 
 #   opcode = 5 (MULT)
 #   operand_a = -9
 #   operand_b = 1
 # 
+#   result    = -9
+# 
 # Read from register location 3: 
 #   opcode = 2 (PASSB)
 #   operand_a = -8
 #   operand_b = 5
 # 
-# Read from register location 9: 
-#   opcode = 7 (MOD)
-#   operand_a = -2
-#   operand_b = 5
+#   result    = 5
 # 
 # Read from register location 9: 
 #   opcode = 7 (MOD)
 #   operand_a = -2
 #   operand_b = 5
+# 
+#   result    = -2
+# 
+# Read from register location 9: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 5
+# 
+#   result    = -2
 # 
 # 
 # ***********************************************************
@@ -164,10 +184,10 @@
 # ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
 # ***********************************************************
 # 
-# ** Note: $finish    : ../lab2/lab01_testbench-interface/instr_register_test.sv(68)
+# ** Note: $finish    : ../lab2/lab01_testbench-interface/instr_register_test.sv(80)
 #    Time: 220 ns  Iteration: 2  Instance: /top/test
 # 1
-# Break in Module instr_register_test at ../lab2/lab01_testbench-interface/instr_register_test.sv line 68
+# Break in Task run at ../lab2/lab01_testbench-interface/instr_register_test.sv line 80
 # Simulation Breakpoint: 1
-# Break in Module instr_register_test at ../lab2/lab01_testbench-interface/instr_register_test.sv line 68
+# Break in Task run at ../lab2/lab01_testbench-interface/instr_register_test.sv line 80
 # MACRO ./run.do PAUSED at line 45
