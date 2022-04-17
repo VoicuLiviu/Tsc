@@ -111,6 +111,13 @@ endtask
     $display("  operand_a = %0d",   lab2if.cb.instruction_word.op_a);
     $display("  operand_b = %0d\n", lab2if.cb.instruction_word.op_b);
     $display("  result    = %0d\n", lab2if.cb.instruction_word.res);
+    if(lab2if.cb.instruction_word.opc==PASSA)
+    begin 
+      if(lab2if.cb.instruction_word.op_a==lab2if.cb.instruction_word.res)
+      begin
+        $display("Verification of PASSA operand_a = %0d and result = %0d is true",lab2if.cb.instruction_word.op_a,lab2if.cb.instruction_word.res);
+      end
+    end 
   endfunction: print_results
   endclass
 

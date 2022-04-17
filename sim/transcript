@@ -135,6 +135,7 @@
 # 
 #   result    = -12
 # 
+# Verification of PASSA operand_a = -12 and result = -12 is true
 # Read from register location 8: 
 #   opcode = 2 (PASSB)
 #   operand_a = 3
@@ -191,3 +192,4 @@
 # Simulation Breakpoint: 1
 # Break in Task run at ../lab2/lab01_testbench-interface/instr_register_test.sv line 80
 # MACRO ./run.do PAUSED at line 45
+# A time value could not be extracted from the current line
